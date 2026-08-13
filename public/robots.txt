@@ -1,0 +1,65 @@
+# robots.txt
+# 说明: 本文件用于控制搜索引擎爬虫的行为
+# 部署到自有域名后，请在文件末尾补充 Sitemap 地址
+
+# ==================== 所有搜索引擎 ====================
+User-agent: *
+Allow: /
+
+# 禁止访问的路径
+Disallow: /api/
+Disallow: /dev-api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /_nuxt/
+
+# 允许访问的静态资源
+Allow: /assets/
+Allow: /images/
+Allow: /favicon.ico
+Allow: /og-image.png
+Allow: /*.css
+Allow: /*.js
+
+# ==================== Google 专属配置 ====================
+User-agent: Googlebot
+Allow: /
+
+# ==================== Bing (必应) 专属配置 ====================
+User-agent: Bingbot
+Allow: /
+
+# ==================== Baidu (百度) 专属配置 ====================
+User-agent: Baiduspider
+Allow: /
+# 百度图片搜索
+User-agent: Baiduspider-image
+Allow: /
+
+# ==================== 360搜索 专属配置 ====================
+User-agent: 360Spider
+Allow: /
+
+# ==================== Sogou (搜狗) 配置 ====================
+User-agent: Sogou web spider
+Allow: /
+
+# ==================== 禁止的爬虫 ====================
+# 禁止垃圾邮件爬虫
+User-agent: EmailCollector
+Disallow: /
+
+User-agent: EmailSiphon
+Disallow: /
+
+User-agent: EmailWolf
+Disallow: /
+
+# ==================== 爬取延迟设置 ====================
+# 为了服务器性能，建议设置爬取延迟
+Crawl-delay: 1
+
+# ==================== Sitemap 位置 ====================
+# 部署到自有域名后取消注释并替换为实际地址
+# Sitemap: https://your-domain.com/sitemap.xml

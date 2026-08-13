@@ -1,0 +1,34 @@
+# 依赖与构建产物
+node_modules
+.nuxt
+.output
+dist
+.data
+
+# 环境变量
+# 说明：.env 由 npm run dev / build 脚本从 .env.development / .env.production 复制生成，
+#      属于产物文件，不纳入版本控制。
+#      .env.development 与 .env.production 只包含接口代理前缀，无敏感信息，因此保留在仓库中，
+#      保证 clone 后可直接 npm run dev。若后续新增密钥类配置，请务必改为忽略并提供 .env.example。
+.env
+.env.local
+.env.*.local
+
+# 日志
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 编辑器与系统文件
+.DS_Store
+.idea
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# 缓存
+.cache
+*.tsbuildinfo
