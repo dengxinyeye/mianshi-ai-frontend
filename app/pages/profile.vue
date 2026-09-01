@@ -176,30 +176,6 @@
 									</div>
 								</div>
 
-								<!-- 充值加赠提示 -->
-								<!-- <div
-									class="mt-4 rounded-xl border border-amber-200 bg-linear-to-r from-amber-50 via-white to-amber-50 p-3 pl-4"
-								>
-									<div class="flex items-center gap-3 text-xs text-amber-800">
-										<div
-											class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center shadow-inner"
-										>
-											<UIcon name="i-heroicons-sparkles" class="w-4 h-4" />
-										</div>
-										<div class="flex-1">
-											<p class="font-semibold text-sm">限时充值加赠</p>
-											<p class="text-[11px] text-amber-700/80 mt-0.5">
-												首次充值立返 20% 旺旺币，下一档折扣自动解锁
-											</p>
-										</div>
-										<span
-											class="inline-flex items-center gap-1 text-[11px] font-medium text-amber-800 px-2 py-1 rounded-full bg-amber-100 border border-amber-200"
-										>
-											<UIcon name="i-heroicons-bolt" class="w-3.5 h-3.5" />
-											限时
-										</span>
-									</div>
-								</div> -->
 							</div>
 						</div>
 					</UCard>
