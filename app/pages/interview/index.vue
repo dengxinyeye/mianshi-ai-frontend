@@ -281,7 +281,8 @@ const startResumeQuiz = async (requestId) => {
 				}
 
 				// 简历押题数据获取完成
-				else if (data.type === 'yati-complete') {
+				else if (data.type === 'complete') {
+					resumeQuizComplete.value = true
 					resultId = data.data.resultId
 					if (data.data?.questions) {
 						predictionResults.value = data.data.questions.map((item) => ({
@@ -294,9 +295,6 @@ const startResumeQuiz = async (requestId) => {
 					}
 					// 更新到 complete 步骤
 					updateQuery({ step: 'complete', resultId })
-				} else if (data.type === 'complete') {
-					// console.log('所有数据解析完成', data)
-					resumeQuizComplete.value = true
 				}
 				// 报错处理
 				else if (data.type === 'error') {
